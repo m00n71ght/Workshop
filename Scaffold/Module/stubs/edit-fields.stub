@@ -1,5 +1,5 @@
-<div class="box-body">
-    <p>
-        Your fields //
-    </p>
+<div class="form-group {{ $errors->has("field") ? ' has-error' : '' }}">
+    {!! Form::label("field", trans('$LOWERCASE_MODULE_NAME$::$PLURAL_LOWERCASE_CLASS_NAME$.form.field')) !!}
+    {!! Form::text("field", old("field", $$LOWERCASE_CLASS_NAME$->field), ["class" => "form-control", "placeholder" => trans('$LOWERCASE_MODULE_NAME$::$PLURAL_LOWERCASE_CLASS_NAME$.form.field')]) !!}
+    {!! $errors->first("field", '<span class="help-block">:message</span>') !!}
 </div>

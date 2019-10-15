@@ -23,8 +23,9 @@ class EntityGenerator extends Generator
         'index-view.stub' => 'Resources/views/admin/$ENTITY_NAME$/index.blade',
         'create-view.stub' => 'Resources/views/admin/$ENTITY_NAME$/create.blade',
         'edit-view.stub' => 'Resources/views/admin/$ENTITY_NAME$/edit.blade',
-        'create-fields.stub' => 'Resources/views/admin/$ENTITY_NAME$/partials/create-fields.blade',
+        'create-trans-fields.stub' => 'Resources/views/admin/$ENTITY_NAME$/partials/create-trans-fields.blade',
         'edit-fields.stub' => 'Resources/views/admin/$ENTITY_NAME$/partials/edit-fields.blade',
+        'edit-trans-fields.stub' => 'Resources/views/admin/$ENTITY_NAME$/partials/edit-trans-fields.blade',
     ];
 
     /**

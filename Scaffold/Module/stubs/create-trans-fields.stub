@@ -1,0 +1,5 @@
+<div class="form-group {{ $errors->has("{$lang}[field]") ? ' has-error' : '' }}">
+    {!! Form::label("{$lang}[field]", trans('$LOWERCASE_MODULE_NAME$::$PLURAL_LOWERCASE_CLASS_NAME$.form.field')) !!}
+    {!! Form::text("{$lang}[field]", old("{$lang}[field]"), ["class" => "form-control", "placeholder" => trans('$LOWERCASE_MODULE_NAME$::$PLURAL_LOWERCASE_CLASS_NAME$.form.field')]) !!}
+    {!! $errors->first("{$lang}[field]", '<span class="help-block">:message</span>') !!}
+</div>
